@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Пельмени Gurman</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#fa0039">
+	<meta name="msapplication-TileColor" content="#b91d47">
+	<meta name="theme-color" content="#fff">
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<meta name="Author" content=""> 
+	<meta name="Copyright" content=""> 
+	<meta name="Address" content="">
+	<meta property="og:locale" content="en_EN">
+	<meta property="og:type" content="article">
+
+	<meta property="og:title" content="name">
+	<meta property="og:description" content="description">
+	<meta property="og:image" content="img/">
+	<meta property="og:url" content="https://alexkotsubo.github.io/name/index.html">
+	<meta property="og:site_name" content="name">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:title" content="name">
+	<meta name="twitter:description" content="description">
+	<meta name="twitter:image" content="img/">
+</head>
+<body>
+
+	<div class="wrapper">
+		<nav class="nav" id="nav">
+			<div class="container">
+				<div class="nav__body">
+					<div class="logo nav__logo">
+						<p class="logo__text"><span>Пельмени Гурман</span>Сделано с любовью</p>
+					</div>
+
+					<ul class="menu nav__menu">
+						<li><span class="menu__link" data-to="product">Ассортимент</span></li>
+						<li><span class="menu__link" data-to="reviews">Отзывы</span></li>
+						<li><span class="menu__link" data-to="contact">Контакты</span></li>
+					</ul>
+
+					<div class="nav__social nav-social">
+						<a href="#" class="nav-social__link" title="Наш профиль в Инстаграме">
+							<img src="img/insta.png" alt="insta" class="nav-social__icon">
+						</a>
+						<a href="#" class="nav-social__link" title="Заказать еду в Вайбере">
+							<img src="img/viber.png" alt="viber" class="nav-social__icon">
+						</a>
+					</div>
+
+					<div class="burger">
+						<div class="burger__btn" id="burger_btn">
+							<span class="burger__line"></span>
+							<span class="burger__line"></span>
+							<span class="burger__line"></span>
+						</div>
+						<div class="burger__bg"></div>
+
+						<ul class="burger__menu">
+							<li><span class="burger__link" data-to="product">Ассортимент</span></li>
+							<li><span class="burger__link" data-to="reviews">Отзывы</span></li>
+							<li><span class="burger__link" data-to="contact">Контакты</span></li>
+
+							<li class="nav__social burger__social nav-social">
+								<a href="#" class="nav-social__link" title="Наш профиль в Инстаграме">
+									<img src="img/insta.png" alt="insta" class="nav-social__icon">
+								</a>
+								<a href="#" class="nav-social__link" title="Заказать еду в Вайбере">
+									<img src="img/viber.png" alt="viber" class="nav-social__icon">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<div class="header__offer">
+						<p class="header__title">Пельмени,<br>сделанные с любовью.</p>
+						<p class="header__text">Что может быть вкуснее?</p>
+						<div class="btn header__btn" data-to="product">
+							<span class="btn__body">Выберите пельмени</span>
+						</div>
+					</div>
+
+					<div class="header__slider header-slider">
+						<div class="header-slider__body">
+							<div class="header-slider__wrap swiper-container">
+								<div class="swiper-wrapper header-slider__body">
+									<div class="swiper-slide header-slider__slide ib">
+										<img src="img/bg_2.jpg" title="bg_2" alt="bg_2" class="ib_use">
+									</div>
+
+									<div class="swiper-slide header-slider__slide ib">
+										<img src="img/1.jpg" title="1" alt="1" class="ib_use">
+									</div>
+								</div>
+							</div>
+							<div class="header-slider__pagination swiper-pagination" id="header-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="product" id="product">
+			<div class="container">
+				<div class="title">
+					<div class="title__title title__title_line">Выбирайте ваши любимые пельмени и делайте заказ</div>
+				</div>
+
+				<div class="product__carts">
+					<div class="product__cart-wrap">
+						<div class="product__cart">
+							<div class="product__img-wrap">
+								<img src="img/2.jpg" title="2" alt="2" class="product__img">
+							</div>
+							<h2 class="product__title">Пельмени зелёные</h2>
+							<p class="product__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta atque consequuntur nemo saepe quis earum non libero maiores.</p>
+							<div class="btn product__btn">
+								<span class="btn__body">Получить</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="product__cart-wrap">
+						<div class="product__cart">
+							<div class="product__img-wrap">
+								<img src="img/bg_2.jpg" title="2" alt="2" class="product__img">
+							</div>
+							<h2 class="product__title">Пельмени зелёные</h2>
+							<p class="product__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fuga consectetur accusantium exercitationem ipsam autem nesciunt, amet placeat id corporis animi accusamus quibusdam porro maiores, expedita officiis, illum eius aspernatur.</p>
+							<div class="btn product__btn">
+								<span class="btn__body">Получить</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="product__cart-wrap">
+						<div class="product__cart">
+							<div class="product__img-wrap">
+								<img src="img/2.jpg" title="2" alt="2" class="product__img">
+							</div>
+							<h2 class="product__title">Пельмени зелёные</h2>
+							<p class="product__text">Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Ipsum facere excepturi maxime tempora, provident? Suscipit, inventore, veniam. Incidunt eos facilis autem aspernatur inventore quia, praesentium neque, ipsa nobis qui fuga.</p>
+							<div class="btn product__btn">
+								<span class="btn__body">Получить</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="product__cart-wrap">
+						<div class="product__cart">
+							<div class="product__img-wrap">
+								<img src="img/bg_2.jpg" title="2" alt="2" class="product__img">
+							</div>
+							<h2 class="product__title">Пельмени зелёные</h2>
+							<p class="product__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta atque consequuntur nemo saepe quis earum non libero maiores.</p>
+							<div class="btn product__btn">
+								<span class="btn__body">Получить</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="product__cart-wrap">
+						<div class="product__cart">
+							<div class="product__img-wrap">
+								<img src="img/2.jpg" title="2" alt="2" class="product__img">
+							</div>
+							<h2 class="product__title">Пельмени зелёные</h2>
+							<p class="product__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fuga consectetur accusantium exercitationem ipsam autem nesciunt, amet placeat id corporis animi accusamus quibusdam porro maiores, expedita officiis, illum eius aspernatur.</p>
+							<div class="btn product__btn">
+								<span class="btn__body">Получить</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="product__cart-wrap">
+						<div class="product__cart">
+							<div class="product__img-wrap">
+								<img src="img/2.jpg" title="2" alt="2" class="product__img">
+							</div>
+							<h2 class="product__title">Пельмени зелёные</h2>
+							<p class="product__text">Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Ipsum facere excepturi maxime tempora, provident? Suscipit, inventore, veniam. Incidunt eos facilis autem aspernatur inventore quia, praesentium neque, ipsa nobis qui fuga.</p>
+							<div class="btn product__btn">
+								<span class="btn__body">Получить</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- <section class="reviews" id="reviews">
+			<div class="container">
+				<div class="reviews__slider reviews-slider swiper-container">
+					<div class="reviews-slider__body swiper-wrapper">
+						<div class="swiper-slide reviews-slider__slide">Slide 1</div>
+						<div class="swiper-slide reviews-slider__slide">Slide 2</div>
+						<div class="swiper-slide reviews-slider__slide">Slide 3</div>
+					</div>
+
+					<div class="reviews-slider__pagination swiper-pagination"></div>
+					<div class="reviews-slider__button reviews-slider__prev swiper-button-prev"></div>
+					<div class="reviews-slider__button reviews-slider__next swiper-button-next"></div>
+				</div>
+			</div>
+		</section> -->
+	</div>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
+
+<!-- Select -->
+
+<!-- <div class="_select" id="select-spec">
+	<div class="select-title spec-title">
+		<p class="select-value spec-value"></p>
+		<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="select-icon spec-icon svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
+	</div>
+
+	<div class="select-list spec-list">
+		<input type="checkbox" class="select-input" id="spec-1" checked>
+		<label for="spec-1" class="select-label spec-label">1</label>
+		<input type="checkbox" class="select-input" id="spec-2">
+		<label for="spec-2" class="select-label spec-label">2</label>
+		<input type="checkbox" class="select-input" id="spec-3">
+		<label for="spec-3" class="select-label spec-label">3</label>
+	</div>
+</div> -->
+
+<!-- Form -->
+
+<!-- <form action="#" id="form" class="form__body">
+	<h1 class="form__title">Отправка данных на почту</h1>
+	<div class="form__item">
+		<label for="formName" class="form__label">Имя*:</label>
+		<input type="text" id="formName" class="form__input _req" name="name">
+	</div>
+
+	<div class="form__item">
+		<label for="formEmail" class="form__label">E-mail*:</label>
+		<input type="text" id="formEmail" class="form__input _req _email" name="email">
+	</div>
+
+	<div class="form__item">
+		<div class="form__label">Левша или правша?</div>
+		<div class="options">
+			<div class="options__item">
+				<input id="formRightHanded" checked type="radio" value="Right" name="hand" class="options__input">
+				<label for="formRightHanded" class="options__label">Правша</label>
+			</div>
+			<div class="options__item">
+				<input id="formLeftHanded" type="radio" value="left" name="hand" class="options__input">
+				<label for="formLeftHanded" class="options__label">Левша</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="form__item">
+		<label for="formMessage" class="form__label">Сообщение:</label>
+		<textarea name="message" id="formMessage" class="form __input"></textarea>
+	</div>
+
+	<div class="form__item">
+		<div class="form__label">Возраст:</div>
+		<select name="age" class="select">
+			<option value="от 18 до 25" selected>Молодой</option>
+			<option value="от 25 до 45">Старый</option>
+			<option value="от 45">Супер стар</option>
+		</select>
+	</div>
+
+	<div class="form__item">
+		<div class="form__label">Прикрепить фото</div>
+		<div class="file">
+			<div class="file__item">
+				<input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+				<div class="file__button">Выбрать</div>
+			</div>
+			<div id="formPreview" class="file__preview"></div>
+		</div>
+	</div>
+
+	<div class="form__item">
+		<div class="checkbox">
+			<input id="formAgreement" checked type="checkbox" name="agreement" class="_req checkbox__input">
+			<label for="formAgreement" class="checkbox__label">Я согласен</label>
+		</div>
+	</div>
+
+	<button class="form__button" type="submit">Отправить</button>
+</form> -->

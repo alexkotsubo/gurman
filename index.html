@@ -49,8 +49,9 @@
 						<p class="logo__text"><span>Пельмени Гурман</span>Сделано с любовью</p>
 					</div>
 
-					<ul class="menu nav__menu">
-						<li><span class="menu__link" data-to="product">Ассортимент</span></li>
+					<ul class="menu nav__menu"><!-- 
+						<li><span class="menu__link" data-to="product">Ассортимент</span></li> -->
+						<li><span class="menu__link" data-to="product">Меню</span></li>
 						<li><span class="menu__link" data-to="reviews">Отзывы</span></li>
 						<li><span class="menu__link" data-to="contact">Контакты</span></li>
 					</ul>
@@ -136,8 +137,12 @@
 							</div>
 							<h2 class="product__title">Пельмени зелёные</h2>
 							<p class="product__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta atque consequuntur nemo saepe quis earum non libero maiores.</p>
-							<div class="btn product__btn">
-								<span class="btn__body">Получить</span>
+							<div class="product__info">
+								<div class="btn product__btn">
+									<span class="btn__body">Получить</span>
+								</div>
+
+								<div class="product__price">500грн/кг</div>
 							</div>
 						</div>
 					</div>
@@ -149,8 +154,12 @@
 							</div>
 							<h2 class="product__title">Пельмени зелёные</h2>
 							<p class="product__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fuga consectetur accusantium exercitationem ipsam autem nesciunt, amet placeat id corporis animi accusamus quibusdam porro maiores, expedita officiis, illum eius aspernatur.</p>
-							<div class="btn product__btn">
-								<span class="btn__body">Получить</span>
+							<div class="product__info">
+								<div class="btn product__btn">
+									<span class="btn__body">Получить</span>
+								</div>
+
+								<div class="product__price">500грн/кг</div>
 							</div>
 						</div>
 					</div>
@@ -162,8 +171,12 @@
 							</div>
 							<h2 class="product__title">Пельмени зелёные</h2>
 							<p class="product__text">Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Ipsum facere excepturi maxime tempora, provident? Suscipit, inventore, veniam. Incidunt eos facilis autem aspernatur inventore quia, praesentium neque, ipsa nobis qui fuga.</p>
-							<div class="btn product__btn">
-								<span class="btn__body">Получить</span>
+							<div class="product__info">
+								<div class="btn product__btn">
+									<span class="btn__body">Получить</span>
+								</div>
+
+								<div class="product__price">500грн/кг</div>
 							</div>
 						</div>
 					</div>
@@ -175,8 +188,12 @@
 							</div>
 							<h2 class="product__title">Пельмени зелёные</h2>
 							<p class="product__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta atque consequuntur nemo saepe quis earum non libero maiores.</p>
-							<div class="btn product__btn">
-								<span class="btn__body">Получить</span>
+							<div class="product__info">
+								<div class="btn product__btn">
+									<span class="btn__body">Получить</span>
+								</div>
+
+								<div class="product__price">500грн/кг</div>
 							</div>
 						</div>
 					</div>
@@ -188,8 +205,12 @@
 							</div>
 							<h2 class="product__title">Пельмени зелёные</h2>
 							<p class="product__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fuga consectetur accusantium exercitationem ipsam autem nesciunt, amet placeat id corporis animi accusamus quibusdam porro maiores, expedita officiis, illum eius aspernatur.</p>
-							<div class="btn product__btn">
-								<span class="btn__body">Получить</span>
+							<div class="product__info">
+								<div class="btn product__btn">
+									<span class="btn__body">Получить</span>
+								</div>
+
+								<div class="product__price">500грн/кг</div>
 							</div>
 						</div>
 					</div>
@@ -201,8 +222,12 @@
 							</div>
 							<h2 class="product__title">Пельмени зелёные</h2>
 							<p class="product__text">Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Ipsum facere excepturi maxime tempora, provident? Suscipit, inventore, veniam. Incidunt eos facilis autem aspernatur inventore quia, praesentium neque, ipsa nobis qui fuga.</p>
-							<div class="btn product__btn">
-								<span class="btn__body">Получить</span>
+							<div class="product__info">
+								<div class="btn product__btn">
+									<span class="btn__body">Получить</span>
+								</div>
+
+								<div class="product__price">500грн/кг</div>
 							</div>
 						</div>
 					</div>
@@ -210,21 +235,91 @@
 			</div>
 		</section>
 
-		<!-- <section class="reviews" id="reviews">
+		<section class="reviews" id="reviews">
 			<div class="container">
-				<div class="reviews__slider reviews-slider swiper-container">
-					<div class="reviews-slider__body swiper-wrapper">
-						<div class="swiper-slide reviews-slider__slide">Slide 1</div>
-						<div class="swiper-slide reviews-slider__slide">Slide 2</div>
-						<div class="swiper-slide reviews-slider__slide">Slide 3</div>
+				<div class="title">
+					<div class="title__title title__title_line">Отзывы наших клиентов</div>
+				</div>
+
+				<div class="reviews__body">
+					<div class="reviews-slider__button reviews-slider__prev">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fa0039" width="30px" height="30px"><path d="M0 0h24v24H0z" fill="none"/><path d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"/></svg>
 					</div>
 
-					<div class="reviews-slider__pagination swiper-pagination"></div>
-					<div class="reviews-slider__button reviews-slider__prev swiper-button-prev"></div>
-					<div class="reviews-slider__button reviews-slider__next swiper-button-next"></div>
+					<div class="reviews__slider reviews-slider swiper-container">
+						<div class="reviews-slider__body swiper-wrapper">
+							<div class="swiper-slide reviews-slider__slide">
+								<h3 class="reviews-slider__title">Вася</h3>
+								<p class="reviews-slider__comment">Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Quae eos quas similique quos, ducimus numquam provident voluptate dolores, odit harum dolorem inventore quidem molestias magnam! Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Quae eos quas similique quos, ducimus numquam provident voluptate dolores, odit harum dolorem inventore quidem molestias magnam!</p>
+							</div>
+
+							<div class="swiper-slide reviews-slider__slide">
+								<h3 class="reviews-slider__title">Петр</h3>
+								<p class="reviews-slider__comment">Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Quae eos quas similique quos, ducimus numquam provident voluptate dolores, odit harum dolorem inventore quidem molestias magnam!</p>
+							</div>
+
+							<div class="swiper-slide reviews-slider__slide">
+								<h3 class="reviews-slider__title">Нина</h3>
+								<p class="reviews-slider__comment">Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Quae eos quas similique quos, ducimus numquam provident voluptate dolores, odit harum dolorem inventore quidem molestias magnam!</p>
+							</div>
+						</div>
+
+						<div class="reviews-slider__pagination swiper-pagination"></div>
+					</div>
+
+					<div class="reviews-slider__button reviews-slider__next">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fa0039" width="30px" height="30px"><path d="M0 0h24v24H0z" fill="none"/><path d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"/></svg>
+					</div>
 				</div>
 			</div>
-		</section> -->
+		</section>
+
+		<section class="contact" id="contact">
+			<div class="container">
+				<div class="title">
+					<div class="title__title title__title_line title__title_white">Контакты</div>
+				</div>
+
+				<div class="contact__content">
+					<p class="contact__text">Если вы уже определились с выбором, опишите свой заказ в сообщении в Вайбере на номер +3800000000. Вот шаблон заказа:</p>
+					<ul class="contact__list">
+						<li class="contact__item">1. Укажите название или названия тех пельменей которые вы выбрали</a></li>
+						<li class="contact__item">2. Укажите сколько вы хотите пельменей в килограммах</li>
+					</ul>
+					<div class="contact__social">
+						<a href="#" class="contact__link">Группа в Вайбере</a>
+						<a href="#" class="contact__link">Профиль Инстаграм</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__body">
+					<div class="footer__column">
+						<div class="logo footer__logo">
+							<p class="logo__text"><span>Пельмени Гурман</span>Сделано с любовью</p>
+						</div>
+
+						<div class="footer__social footer-social">
+							<a href="#" class="nav-social__link" title="Наш профиль в Инстаграме">
+								<img src="img/insta.png" alt="insta" class="nav-social__icon">
+							</a>
+							<a href="#" class="nav-social__link" title="Заказать еду в Вайбере">
+								<img src="img/viber.png" alt="viber" class="nav-social__icon">
+							</a>
+						</div>
+					</div>
+
+					<ul class="menu footer__menu">
+						<li><span class="footer__link" data-to="product">Ассортимент</span></li>
+						<li><span class="footer__link" data-to="reviews">Отзывы</span></li>
+						<li><span class="footer__link" data-to="contact">Контакты</span></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 	</div>
 
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
